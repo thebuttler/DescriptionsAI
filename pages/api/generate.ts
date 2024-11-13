@@ -48,15 +48,16 @@ export default async function handler(
     },
     body: JSON.stringify({
       version:
-        "2e1dddc8621f72155f24cf2e0adbde548458d3cab9f00c0139eea840d0ac4746",
+        "80537f9eead1a5bfa72d5ac6ea6414379be41d4d4f6679fd776e9535d1eb58bb",
       input: {
         image: imageUrl,
-        task: "image_captioning",
+        prompt: "get the image description like we are going to sell it",
       },
     }),
   });
 
   let jsonStartResponse = await startResponse.json();
+  console.log(jsonStartResponse);
   let endpointUrl = jsonStartResponse.urls.get;
 
   // GET request to get the status of the image restoration process & return the result when it's ready
