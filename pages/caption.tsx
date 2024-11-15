@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                         <textarea
                           className="w-full h-32 p-2 text-gray-700 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring"
                           placeholder="Enter text here..."
-                          value={caption.replace("Caption: ", "")}
+                          value={typeof caption === 'string' ? caption.replace("Caption: ", "") : ""}
                         />
                         <button
                           className="px-4 py-2 text-white bg-[#5a5cd1] rounded-md hover:bg-[#3f4194]  focus:outline-none focus:ring"

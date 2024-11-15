@@ -51,7 +51,7 @@ export default async function handler(
         "80537f9eead1a5bfa72d5ac6ea6414379be41d4d4f6679fd776e9535d1eb58bb",
       input: {
         image: imageUrl,
-        prompt: "get the image description like we are going to sell it",
+        prompt: "Describe the image in a sentence",
       },
     }),
   });
